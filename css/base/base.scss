@@ -1,0 +1,88 @@
+// 文字カラー
+$white-color: #fff;
+$black-color: #000;
+$red-color: #ED1A3D;
+// 背景カラー
+$bg-white-color: #fff;
+$bg-main-color:#fff;
+$bg-gray-color: #858d8f;
+$bg-color:#F5F5DC;
+// ボーダーカラー
+$bd-white-color: #fff;
+$bd-black-color:#000;
+// ホバーカラー
+$hover-gray-color: #bbb;
+
+body {
+  position: relative;
+  background-color: $bg-color;
+  font-size: 62.5%;
+  width: 100vw;
+  margin: 0;
+  
+  .board_base{
+    background-color: $bg-main-color;
+    font-size: 1rem;
+    width: 800px;
+    margin: 80px auto;
+    
+    // コンテンツヘッダー
+    .board_header{
+      background-color: $bg-gray-color;
+      position: relative;
+      font-size: 1.6rem;
+      font-weight: 600;
+      width: 100%;
+      height: 70px;
+      margin-bottom: 20px;
+
+      > p{
+        color: $white-color;
+        border-left: 3px solid $bd-white-color;
+        line-height: 70px;
+        margin-left: 20px;
+        padding-left: 30px;
+      }
+    }
+
+    // コンテンツフォーム
+    .board_form{
+      width: 600px;
+      margin: auto;
+      
+      form{
+        > div{
+          padding-bottom: 15px;
+          > p{
+            padding-bottom: 5px;
+          }
+
+          .empty{
+            color: $red-color;
+            font-size: 0.6rem;
+          }
+          
+          .form_textarea{
+            resize: none;
+            width: 300px;
+            height: 100px;
+          }
+
+          .form_submit{
+            border-style: none;
+            border: 1px solid $bd-black-color;
+            background-color: $bg-white-color;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            padding: 2px 15px; 
+            &:hover{
+              cursor: pointer;
+              background-color: $hover-gray-color;
+              color: $white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
